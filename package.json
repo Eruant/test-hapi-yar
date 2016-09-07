@@ -1,0 +1,14 @@
+{
+  "name": "test-hapi-yar",
+  "version": "1.0.0",
+  "description": "Testing issue with setting yar cookies",
+  "scripts": {
+    "start": "node server1.js & node server2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "15.0.3",
+    "yar": "7.0.2"
+  }
+}
