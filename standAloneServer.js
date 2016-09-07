@@ -7,15 +7,18 @@ server.connection({
   port: 3001
 })
 
+const cookieExpire = 7 * 24 * 60 * 60 * 1000 // 7 days
+
 server.register({
   register: yar,
   options: {
     cookieOptions: {
       password: 'afjrg%fica###gsigv0scjedgkGYTTTv',
-      isSecure: false
+      isSecure: false,
+      ttl: cookieExpire
     },
     cache: {
-      expiresIn: 7 * 24 * 60 * 60 * 1000 // 7 days
+      expiresIn: cookieExpire
     }
   }
 })
